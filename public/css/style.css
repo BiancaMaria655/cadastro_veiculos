@@ -1,0 +1,107 @@
+#divFormInserirVeiculo {
+    position: relative;
+}
+
+#formInserirVeiculo {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+}
+
+
+/* partial item de listar veículos */
+
+.itemVeiculoPartial {
+    text-align: left;
+}
+
+
+/* Titulos */
+
+#titulo {
+    color: blue;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+/* botoes */
+
+.btn {
+    background-color: blue;
+}
+
+.cancelar {
+    background-color: gray;
+    border-color: gray;
+}
+
+.cancelar:hover {
+    background-color: blue;
+}
+
+.button_remover {
+    background-color: white;
+    border: none;
+    color: red;
+}
+
+
+/* visualizar veiculos */
+
+.visualizarVeiculos {
+    position: relative;
+}
+
+.veiculos_list {
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    display: flex;
+}
+
+.veiculos_list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 2px solid;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+
+/* navbar */
+
+.navbar {
+    background-color: blue;
+}
+
+.navbar-brand,
+.navbar-toggler-icon,
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: black;
+    font-size: 1.2em;
+}
+
+.body-content {
+    margin-bottom: 50%;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

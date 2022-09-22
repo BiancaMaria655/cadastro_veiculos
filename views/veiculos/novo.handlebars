@@ -1,0 +1,48 @@
+<h3 id="titulo">Cadastrar novo veículo</h3>
+
+<div id="divFormInserirVeiculo">
+  <form action="/veiculo/cadastrar" method="post" id="formInserirVeiculo" class="row g-3" >
+    {{!-- NomeTipo --}}
+    <div class="col-md-6">
+      <label for="inputNome" class="form-label">Nome</label>
+      <input type="text" class="form-control" name="inputNome">
+    </div>
+    {{!-- Modelo --}}
+    <div class="col-md-6">
+      <label for="inputModelo" class="form-label">Modelo</label>
+      <input type="text" class="form-control" name="inputModelo">
+    </div>
+    {{!-- Fabricante, cor, e ano --}}
+    <div class="col-md-6">
+      <label for="inputFabricante" class="form-label">Fabricante</label>
+      <input type="text" class="form-control" name="inputFabricante">
+    </div>
+    <div class="col-md-4">
+      <label for="inputCor" class="form-label">Cor</label>
+      <input type="text" class="form-control" name="inputCor">
+    </div>
+    <div class="col-md-2">
+      <label for="inputAno" class="form-label">Ano</label>
+      <input type="text" class="form-control" name="inputAno">
+    </div>
+
+    {{!-- Valor --}}
+    <div class="col-md-6">
+      <label for="inputValor" class="form-label">Valor</label>
+      <input type="text" class="form-control" name="inputValor">
+    </div>
+    <div class="col-md-4">
+      <label for="inputChasi" class="form-label">Chassi</label>
+      <input type="text" class="form-control" name="inputChassi">
+    </div>
+    <div class="col-md-2">
+      <label for="inputPlaca" class="form-label">Placa</label>
+      <input type="text" class="form-control" name="inputPlaca">
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button class="btn btn-primary  me-md-2" type="submit">Salvar</button>
+      <a href="\veiculo\listaVeiculos" class="btn btn-primary cancelar" role="button">Cancelar</a>
+    </div>
+  </form>
+</div>

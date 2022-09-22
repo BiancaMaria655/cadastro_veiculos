@@ -1,0 +1,50 @@
+<h3 id="titulo">Editar veículo {{veiculo.nome}} e id {{veiculo.id}}</h3>
+
+
+<div id="divFormInserirVeiculo">
+  <form action="/veiculo/editar" method="post" id="formInserirVeiculo" class="row g-3" >
+    {{!-- NomeTipo --}}
+    <div class="col-md-6">
+      <input type="hidden" name="id" value="{{veiculo.id}}">
+      <label for="inputNome" class="form-label">Nome</label>
+      <input type="text" class="form-control" name="inputNome" value="{{veiculo.nome}}">
+    </div>
+    {{!-- Modelo --}}
+    <div class="col-md-6">
+      <label for="inputModelo" class="form-label">Modelo</label>
+      <input type="text" class="form-control" name="inputModelo" value="{{veiculo.modelo}}">
+    </div>
+    {{!-- Fabricante, cor, e ano --}}
+    <div class="col-md-6">
+      <label for="inputFabricante" class="form-label">Fabricante</label>
+      <input type="text" class="form-control" name="inputFabricante" value="{{veiculo.fabricante}}">
+    </div>
+    <div class="col-md-4">
+      <label for="inputCor" class="form-label">Cor</label>
+      <input type="text" class="form-control" name="inputCor" value="{{veiculo.cor}}">
+    </div>
+    <div class="col-md-2">
+      <label for="inputAno" class="form-label">Ano</label>
+      <input type="text" class="form-control" name="inputAno" value="{{veiculo.ano}}">
+    </div>
+
+    {{!-- Valor, chassi e placa --}}
+    <div class="col-md-6">
+      <label for="inputValor" class="form-label">Valor</label>
+      <input type="text" class="form-control" name="inputValor" value="{{veiculo.valor}}">
+    </div>
+    <div class="col-md-4">
+      <label for="inputChasi" class="form-label">Chassi</label>
+      <input type="text" class="form-control" name="inputChassi" value="{{veiculo.chassi}}">
+    </div>
+    <div class="col-md-2">
+      <label for="inputPlaca" class="form-label">Placa</label>
+      <input type="text" class="form-control" name="Placa" value="{{veiculo.placa}}">
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button class="btn btn-primary me-md-2" type="submit">Salvar</button>
+      <a href="\veiculo\listaVeiculos" class="btn btn-primary cancelar" role="button">Cancelar</a>
+    </div>
+  </form>
+</div>
